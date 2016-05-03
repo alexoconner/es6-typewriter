@@ -4,8 +4,9 @@
  * @param (word (strong), target (element), options {object}, callback)
  */
 export default function typewriter(word, target, options, callback) {
-    if ( word.length === 0 ) {
-        console.info('No vaild word given');
+    if ( word === undefined ) {
+        console.error('No vaild word given');
+        return false;
     }
 
     const targetEl = document.getElementById(target);
@@ -38,7 +39,7 @@ export default function typewriter(word, target, options, callback) {
             targetEl.innerHTML = word;
 
             wordLength--;
-            if ( wordLength > 1) {
+            if ( wordLength >= 1) {
                 deleteLetters( word.substr(0, wordLength - 1) );
             }
             else {
@@ -51,4 +52,3 @@ export default function typewriter(word, target, options, callback) {
     // kick start
     writeLetters();
 }
-
