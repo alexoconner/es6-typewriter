@@ -1,0 +1,27 @@
+{
+  "name": "typewriter",
+  "version": "0.0.1",
+  "description": "typewriter with javascript (es6)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexoconner/es6-typewriter.git"
+  },
+  "keywords": [
+    "javascript",
+    "typewriter",
+    "es6",
+    "type",
+    "text",
+    "animation"
+  ],
+  "author": "Alexander Skrabl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexoconner/es6-typewriter/issues"
+  },
+  "homepage": "https://github.com/alexoconner/es6-typewriter#readme"
+}
